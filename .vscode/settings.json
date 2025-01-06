@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Infinite Capsule Runner.sln"
+    "dotnet.defaultSolution": "Infinite_Capsule_Runner.sln"
 }
