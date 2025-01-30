@@ -6,9 +6,10 @@ public class PlayerMovement : MonoBehaviour
 
     bool alive = true;  
     public float speed = 5;
-    public Rigidbody rb;
+    [SerializeField] Rigidbody rb;
     float horizontalInput;
-    public float horizontalMultiplier = 2;
+    [SerializeField] float horizontalMultiplier = 2;
+    public float speedIncreasePerPoint = 0.1f;
 
     private void FixedUpdate() {
         if(!alive) return;

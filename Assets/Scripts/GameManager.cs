@@ -5,14 +5,17 @@ using UnityEngine.UI;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
-    public int score;
+     int score;
     public static GameManager inst;
     
-    public TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] PlayerMovement playerMovement;
 
     public void IncrementScore(){
         score++;
         scoreText.text = "SCORE: " + score;
+        //Increase the player's speed
+        playerMovement.speed += playerMovement.speedIncreasePerPoint;
     }
     private void Awake(){
         inst = this;

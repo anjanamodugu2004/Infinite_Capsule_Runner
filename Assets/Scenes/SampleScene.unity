@@ -432,8 +432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ce62db0d0bd644cae65b2264428d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
   scoreText: {fileID: 398430029}
+  playerMovement: {fileID: 1298430230}
 --- !u!4 &580933197
 Transform:
   m_ObjectHideFlags: 0
@@ -800,6 +800,7 @@ MonoBehaviour:
   speed: 10
   rb: {fileID: 1298430229}
   horizontalMultiplier: 1.7
+  speedIncreasePerPoint: 0.1
 --- !u!1 &1603846455
 GameObject:
   m_ObjectHideFlags: 0
